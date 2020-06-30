@@ -1,0 +1,196 @@
+<header class="header">
+    <a href="#" class="header__title">
+        <ul class="social-network social-circle">
+            <!-- <li><a href="#" class="icoRss" title="Instagram"><i class="fab fa-instagram"></i></a></li> -->
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+            <!-- <li><a href="#" class="icoLinkedin" title="Youtube"><i class="fab fa-youtube"></i></a></li> -->
+        </ul>
+    </a>
+    <div class="header__cta">
+        <button type="button" class="site-btn" id="First" (click)="GoToDonations()">Envoyez un don</button>
+        <button type="button" class="site-btn" id="Second" (click)="GoToMembers()">Être membre</button>
+        <!-- <button class="header__cta--button">Envoyez un don</button>
+            <button class="header__cta--button">Être membr</button> -->
+    </div>
+</header>
+
+<!-- <div class="iconn">
+        <ul class="social-network social-circle">
+            <li><a href="#" class="icoRss" title="Rss"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+            <li><a href="#" class="icoLinkedin" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <button type="button" class="site-btn hidden-xs" (click)="GoToDonations()">Envoyez un don</button>
+        <button type="button" class="site-btn hidden-xs" (click)="GoToMembers()">Être membre</button>
+
+    </div> -->
+
+<!-- <header id="test">
+
+        <a [routerLink]="'/CalcDons'">
+            <div class="button" id="leftBtn">Envoyez un don</div>
+        </a>
+        <a [routerLink]="'/Adhésion'">
+            <div class="button">Être membre</div>
+        </a>
+    </header> -->
+
+
+<div class="container-fluid">
+    <div class="container">
+
+
+        <div class="row justify-content-sm-center">
+            <div class="col-md-3">
+                <div class="Image-Logo">
+                    <img class="emily-logo" title="Association pour la protection
+                        et la sécurité en laboratoire" src="./assets/img/EMILYS-LOGO.png">
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="text-place">
+                    <p>ASSOCIATION POUR LA PROTECTION ET</p>
+                    <p>LA SÉCURITÉ EN LABORATOIRE</p>
+                </div>
+
+                <!-- <p>ASSOCIATION POUR LA PROTECTION ET LA SÉCURITÉ EN LABORATOIRE</p> -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="site-logo">
+      <img title="Association pour la protection
+      et la sécurité en laboratoire" src="../../assets/img/Logo (2).png">
+      <span class="TitleLogo">ASSOCIATION POUR LA
+        PROTECTION ET LA SÉCURITÉ EN LABORATOIRE</span>
+      </div> -->
+<!-- <div class="row">
+            <div class="col-md-12">
+                <nav id="main_nav">
+                    <ul>
+                        <li>
+                            <a [routerLink]="''" id class="test">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="" id class="test">L'Association</a>
+                            <ul>
+
+                                <li><a [routerLink]="'/Emilie'">Emilie</a></li>
+                                <li><a [routerLink]="'/Presentation'">Presentation</a></li>
+                                <li><a [routerLink]="'/NosMissions'">Nos missions</a></li>
+                                <li><a [routerLink]="'/LeBureau'">Le Bureau</a></li>
+                                <li><a [routerLink]="'/LesAntennes'">Les antennes</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" id class="test">La Securité au laboratoire</a>
+                            <ul>
+                                <li>
+                                    <a [routerLink]="'/RisquesEtPrevention'">Risques et prevention</a>
+                                    <ul>
+                                        <li><a [routerLink]="'/RisqueBiologique'">Le risqué biologie</a></li>
+                                        <li><a [routerLink]="'/RisqueChimique'">Le risqué chimique</a></li>
+                                        <li><a [routerLink]="'/RisquePhysique'">Le risqué physique</a></li>
+                                        <li><a [routerLink]="'/RisqueRadioactif'">Le risqué radioactive</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'/Protection'">Les équipements de protection</a>
+                                    <ul>
+                                        <li><a href="">Protection individuelle</a></li>
+                                        <li><a href="">Protection collectives</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'/FormationsEtInformations'">Formations et informations</a>
+                                    <ul>
+                                        <li><a href="">Formation</a></li>
+                                        <li><a href="">Information</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'/AccidentsDuTravailEtMaladiesProfessionnelles'">Accidents du travail et maladies professionnelles</a>
+                                    <ul>
+                                        <li><a [routerLink]="'/AccidentsDuTravail'">Que faire si je suis victime d'un accident du travail</a></li>
+                                        <li><a href="">Que faire si je suis victime d'une maladie professionnelle</a></li>
+                                        <li><a href="">La faute inexcusable</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'/Responsabilités'">Responsabilités, devoirs et droits</a>
+                                    <ul>
+                                        <li><a href="">La notion de responsabilité</a></li>
+                                        <li><a href="">Les délits</a></li>
+                                        <li><a href="">Les différents acteurs et leurs responsabilités</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Liens utiles</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" id class="test">Actualités</a>
+                            <ul>
+                                <li><a [routerLink]="'/Activité'">L'activité de l'association</a></li>
+                                <li><a [routerLink]="'/Nouvelles'">Actualités dans le domaine</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" id class="test">Nous contacter</a>
+                            <ul>
+                                <li><a [routerLink]="'/AideOuExpérience'">Demandez de l'aide / Racontez-nous votre expérience</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div> -->
+
+<!-- this is the main menu im working on~ -->
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
+         -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">MENU</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-center">
+                <li class="nav-item active">
+                    <a [routerLink]="''" class="nav-link">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                L'Association
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a [routerLink]="'/Emilie'" class="dropdown-item">Emilie</a>
+                        <a [routerLink]="'/Presentation'" class="dropdown-item">Presentation</a>
+                        <a [routerLink]="'/NosMissions'" class="dropdown-item">Nos missions</a>
+                        <a a [routerLink]="'/LeBureau'" class="dropdown-item">Le Bureau</a>
+                        <a [routerLink]="'/LesAntennes'" class="dropdown-item">Les antennes</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a a [routerLink]="'/ModeDeDéveloppement'" class="nav-link">La Securité au laboratoire</a>
+                </li>
+                <li class="nav-item">
+                    <a a [routerLink]="'/ModeDeDéveloppement'" class="nav-link">Actualités</a>
+                </li>
+                <li class="nav-item">
+                    <a a [routerLink]="'/AideOuExpérience'" class="nav-link">Nous Contacter</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

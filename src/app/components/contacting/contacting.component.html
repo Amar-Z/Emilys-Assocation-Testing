@@ -1,0 +1,94 @@
+<!-- <div class="form-style-2">
+    <div class="form-style-2-heading">Veuillez remplir le formulaire!</div>
+    <form [formGroup]="userData" (ngSubmit)="sendDataAsFormBody()" id="contactForm">
+        <label for="FirstName"><span>Mme/Mr Prénom</span><input type="text" formControlName="FirstName" class="input-field" name="field1" value="" /></label>
+        <label for="LastName"><span>Nom</span><input type="text" formControlName="LastName" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="text" formControlName="email" class="input-field" name="field2" value="" required/></label>
+
+        <label for="field4"><span>Aide ou expérience</span><select name="field4" formControlName="HelpOrExp" class="select-field" required>
+    <option value="" selected="true" disabled>Choisissez s'il vous plaît</option>
+  <option value="Help">Demandez de l'aide</option>
+  <option value="Exp">Racontez-nous votre expérience</option>
+  </select></label>
+
+        <label>à partager votre expérience d'une façon anonyme avec nos lecteurs?</label>
+        <label for="Oui">Oui</label>
+        <div class="Checkbox"><input id="Oui" type="radio" value="Oui" ng-true-value formControlName="YesOrNo"><span> <label for="Non">Non</label><span> <input id="female" type="radio" value="Non" formControlName="YesOrNo"></span></span>
+        </div>
+
+
+        <label for="field5"><span>Message <span class="required">*</span></span><textarea formControlName="msgUser" name="field5" class="textarea-field"></textarea></label>
+
+        <label><span> </span><input type="submit" value="Submit"/>
+  </label>
+    </form>
+</div> -->
+
+
+<!-- Material form contact -->
+<div class="contact darken-pseudo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="p-5" [formGroup]="userData" (ngSubmit)="sendDataAsFormBody()">
+
+                    <p class="h4 mb-4 text-center">Nous contacter</p>
+
+
+                    <input class="form-control mb-4" id="textInput" type="text" formControlName="FirstName" placeholder="Mme/Mr Prénom" required>
+
+                    <input type="text" id="defaultContactFormName" class="form-control mb-4" formControlName="LastName" placeholder="Nom" required>
+
+                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" formControlName="email" required>
+
+                    <label for="contact-preference">Motif:</label>
+                    <span>
+                        <ul class="field">
+                            
+                                <li>
+                                    <label>
+                                        <input type="radio" name="HelpOrExp" id="contact-preference" value="Demandez de l'aide" formControlName="HelpOrExp" required> Demadez de l'aide
+                                      </label>
+                    
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="HelpOrExp" id="contact-preference" value="Partagez votre expérience" formControlName="HelpOrExp"> Partagez votre expérience
+                                      </label>
+                                    
+                                </li>
+                            
+                            </ul>
+                        
+              
+            </span>
+                    <!-- <select id="defaultSelect" class="browser-default custom-select mb-4" formControlName="HelpOrExp" required>
+          <option value="" disabled="" selected="">Aide ou expérience</option>
+          <option value="Demandez de l'aide">Demandez de l'aide</option>
+          <option value="Racontez-nous votre expérience">Racontez-nous votre expérience</option>
+         
+      </select> -->
+
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" formControlName="msgUser" placeholder="Message" required></textarea>
+
+                    <!-- 
+                    <label for="contact-preference">à partager votre expérience d'une façon anonyme avec nos lecteurs?</label>
+                    <div class="radio">
+                        <label>
+                    <input type="radio" name="YesOrNo" id="contact-preference" value="Non" formControlName="YesOrNo" required>Non
+                  </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                    <input type="radio" name="YesOrNo" id="contact-preference" value="Oui" formControlName="YesOrNo">Oui
+                  </label>
+                    </div> -->
+
+                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!userData.valid" (click)="openDialog()">Soumettre</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

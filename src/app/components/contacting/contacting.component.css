@@ -1,0 +1,140 @@
+.border.p-5 {
+    border: black;
+}
+
+.h4.mb-4 {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.mb-4,
+#exampleFormControlTextarea2 {
+    font-size: large;
+    font-weight: bolder;
+    display: block;
+    border-color: green;
+}
+
+::placeholder {
+    color: black;
+}
+
+.browser-default {
+    height: 34px;
+    width: 495px;
+}
+
+select option {
+    background-color: rgb(129, 125, 125);
+}
+
+select option:hover {
+    background-color: rgb(19, 97, 19);
+}
+
+.contact {
+    background-image: url('../../../assets/img/Contact-us-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    border: none;
+}
+
+#textInput,
+#defaultContactFormName,
+#defaultContactFormEmail,
+#defaultSelect,
+#exampleFormControlTextarea2,
+#contact-preference {
+    background-color: transparent;
+    color: black;
+}
+
+label {
+    color: black;
+    padding-left: 10px;
+}
+
+.btn.btn-info {
+    padding-top: 10px;
+}
+
+.buttonfx {
+    color: black;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #eee;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    margin-top: 30px;
+}
+
+.curtainup:disabled {
+    background: gray;
+    color: white;
+    outline: none;
+    border: none;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    margin-top: 30px;
+}
+
+.curtainup:enabled {
+    background: rgb(11, 39, 13);
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.row {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+textarea {
+    padding-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}

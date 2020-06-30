@@ -1,0 +1,132 @@
+.border.p-5 {
+    border: black;
+}
+
+.h4.mb-4 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.browser-default {
+    height: 34px;
+    width: 495px;
+}
+
+.mb-4 {
+    font-size: large;
+    font-weight: bolder;
+    display: block;
+    border-color: green;
+}
+
+select option {
+    background-color: rgb(129, 125, 125);
+    color: white;
+}
+
+select option:hover {
+    background-color: rgb(19, 97, 19);
+}
+
+::placeholder {
+    color: rgb(83, 82, 82);
+}
+
+.contact {
+    background-image: url("../../../../assets/img/member.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#currency {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#textInput,
+#defaultContactFormName,
+#defaultContactFormEmail,
+#defaultSelect,
+#contact-preference,
+#AddressInp,
+#postalCodeInp,
+#VilleInp {
+    background-color: transparent;
+    color: black;
+}
+
+label {
+    color: white;
+}
+
+.buttonfx {
+    color: black;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #eee;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+}
+
+.curtainup:disabled {
+    background: gray;
+    color: white;
+    outline: none;
+    border: none;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    margin-bottom: 20px;
+}
+
+.curtainup:enabled {
+    background: rgb(11, 39, 13);
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.row {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}

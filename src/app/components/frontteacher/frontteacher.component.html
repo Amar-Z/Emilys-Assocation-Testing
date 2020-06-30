@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor='let t of MyTeachers'>
+    {{t.FIRST_NAME}} {{t.LAST_NAME}}
+     <div *ngFor='let i of t.My_Uploaded_files'>
+        <img [src]='i.My_URL' />
+     </div>
+  </li>
+</ul>

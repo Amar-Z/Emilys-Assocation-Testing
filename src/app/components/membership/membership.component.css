@@ -1,0 +1,87 @@
+.btn.btn-primary {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(91, 126, 42);
+    border-color: rgb(39, 95, 39);
+}
+
+.col-md-12 {
+    text-align: center;
+}
+
+.btn.btn-link:hover {
+    background-color: rgb(91, 126, 42);
+}
+
+.row {
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PayWay {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font: bold 3.75rem/3.25rem 'Vidaloka', serif;
+    padding-bottom: 5px;
+    margin-right: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: bold 2rem/1.5rem 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-top: 1.25rem;
+    color: rgb(29, 78, 29);
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+#par-three {
+    font-family: sans-serif;
+    color: rgb(189, 33, 33);
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media (min-width: 450px) {
+    .btn.btn-primary {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 760px) {
+    .btn.btn-primary {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    .btn.btn-primary {
+        font-size: 15px;
+    }
+}

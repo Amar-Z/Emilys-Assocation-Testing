@@ -1,0 +1,70 @@
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <p>Le don à l’association Emilys ouvre droit à une réduction fiscale car elle remplit les conditions générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
+
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                        <img src="assets/img/000012664_600x400_c.jpg" />
+                    </a>
+                    <div class="card-content">
+                        <h5 class="card-title">
+                            Veuillez saisir un montant à calculer
+                        </h5>
+                        <button type="button" class="btn btn-success" value="50" (click)="showDivF(50)">50€</button>
+                        <button type="button" class="btn btn-success" value="100" (click)="showDivS(100)">100€</button>
+                        <button type="button" class="btn btn-success" value="150" (click)="showDivT(150)">150€</button>
+                        <input class="btn btn-success" type="number" placeholder="_______" [(ngModel)]="Y" name="Y" />
+                        <br>
+                        <div class="FirstDiv" *ngIf="currentBtn == 50 && FirstDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="SecondDiv" *ngIf="currentBtn == 100 && SecondtDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="ThirdDiv" *ngIf="currentBtn == 150 && ThirdDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="FourthDiv" *ngIf="FourthDiv == true">
+                            Le montant après impôt est
+                            <span> {{X}} €</span>
+                        </div>
+                        <div>
+
+                        </div>
+                        <!-- <button type="button" class="btn btn-outline-success">Other..</button> -->
+                    </div>
+                    <div class="card-read-more">
+                        <button class="btn btn-link btn-block curtainup" [disabled]="!Y" (click)="onCalc()">
+                            Calculer
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <p>Votre don est déductible à hauteur de 66% au titre de l'impôt sur le revenu dans la limite de 20% de vos revenus (l’éventuel excédent étant reportable sur 5 ans). Si vous êtes assujetti à l’Impôt sur la fortune Immobilières, IFI, votre
+                    don est déductible à hauteur de 75% dans la limite de 50.000 €. Les dons d’entreprises sont déductibles à hauteur de 60% dans la limite de 5 pour mille du CA.</p>
+            </div>
+            <div class="col">
+                <div class="PayWay">
+                    Veuillez choisir votre mode de don.
+                </div>
+
+                <a href="https://www.helloasso.com/associations/emilys/formulaires/1/widget" class="btn btn-primary btn-block">Don sécurisé en ligne : <br> Via le site Helloasso</a>
+                <a [routerLink]="'/DesDons'" class="btn btn-primary btn-lg btn-block">Don par chèque : <br> Adressé au 129 Avenue de Saint-ouen,<br> 75017 Paris</a>
+                <a [routerLink]="'/DesDons'" class="btn btn-primary btn-lg btn-block">Don par virement bancaire: Crédit Mutuel <br>IBAN: FR76 1027 8062 7400 0210 7770 178 <br> BIC: CMCIFR2A</a>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+#logo {
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+#logo:after {
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+}
+
+.col-md-12 {
+    text-align: justify;
+}
+
+p {
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    text-align: center;
+}

@@ -1,0 +1,121 @@
+<div class="container-fluid">
+
+
+    <div id="minimal-bootstrap-carousel" class="carousel slide carousel-fade slider-content-style slider-home-one" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-2" data-slide-to="1"></li>
+            <li data-target="#carousel-2" data-slide-to="2"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active slide-1 darken-pseudo" style="background-image: url('assets/img/whoAre.jpg');">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="box valign-middle">
+                            <div class="content text-center">
+                                <h3 data-animation="animated fadeInUp">Qui sommes nous ?</h3>
+                                <p>L’association EMILYS a vu le jour le 29 Avril 2020, de la volonté de plusieurs personnes touchées par l’histoire d’Emilie, et désirant promouvoir la sécurité dans les laboratoires de recherche et médical. </p>
+                                <a [routerLink]="'/LeBureau'" data-animation="animated fadeInDown" class="thm-btn ">Qui sommes nous ?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item slide-2 darken-pseudo " style="background-image: url('assets/img/memberslide.jpg');">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="box valign-middle">
+                            <div class="content text-center">
+                                <h3 data-animation="animated fadeInUp">Ensemble, on est plus fort !</h3>
+                                <p>Rejoignez nous et devenez acteur pour renforcer la sécurité et la protection des personnels du laboratoire.</p>
+                                <a [routerLink]="'/Adhésion'" data-animation="animated fadeInDown" href="#" class="thm-btn ">Adhérer aujourd’hui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item slide-3 darken-pseudo" style="background-image: url('assets/img/slide3.jpg');">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="box valign-middle">
+                            <div class="content text-center">
+                                <h3 data-animation="animated fadeInUp">Soutenez l’Association Emilys</h3>
+                                <p>Faire un don à notre association, c'est nous permettre d'agir et de nous aider à réaliser nos objectifs.</p>
+                                <p>Faites un don à notre association !</p>
+                                <a [routerLink]="'/CalcDons'" data-animation="animated fadeInDown" href="#" class="thm-btn ">Faites un don</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="carousel-control-prev" href="#minimal-bootstrap-carousel" role="button" data-slide="prev">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#minimal-bootstrap-carousel" role="button" data-slide="next">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <div class="container-fostrap">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="card">
+                                <a class="img-card">
+                                    <img src="assets/img/Screenshot (3).png" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a [routerLink]="'/Emilie'"> L'histoire d'Emilie
+                                  </a>
+                                    </h4>
+                                    <p class="">
+                                        Emilys, un nom d’association qui n’a pas été choisi au hasard.. </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a [routerLink]="'/Emilie'" class="btn btn-link btn-block">
+                                    Lire la suite
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="card">
+                                <a class="img-card" href=#>
+                                    <img src="assets/img/mission.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a [routerLink]="'/NosMissions'"> Nos missions
+                                  </a>
+                                    </h4>
+                                    <p class="">
+                                        Nos missions se divisent selon trois grands axes..
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a [routerLink]="'/NosMissions'" class="btn btn-link btn-block">
+                                    Lire la suite
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

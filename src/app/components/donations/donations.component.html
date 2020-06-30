@@ -1,0 +1,53 @@
+<!-- <div class="form-style-2">
+    <div class="form-style-2-heading">Veuillez remplir le formulaire!</div>
+    <form [formGroup]="memberData" (ngSubmit)="onSubmit()" id="contactForm">
+        <label for="field1"><span>Mme/Mr Prénom <span class="required">*</span></span><input type="text"
+        formControlName="FirstName"  class="input-field" name="field1" value="" /></label>
+        <label for="field1"><span>Nom <span class="required">*</span></span><input type="text" formControlName="LastName" class="input-field"
+          name="field1" value="" /></label>
+        <label for="field2"><span>Addresse <span class="required">*</span></span><input type="text" formControlName="Address" class="input-field"
+          name="field2" value="" /></label>
+        <label for="field2"><span>Code Postal <span class="required">*</span></span><input type="number" formControlName="PostalCode" class="input-field"
+          name="field2" value="" /></label>
+        <label for="field2"><span>Ville <span class="required">*</span></span><input type="text" formControlName="City" class="input-field"
+          name="field2" value="" /></label>
+        <label for="field2"><span>Montant à payer <span class="required">*</span></span><input type="number" formControlName="amount" class="input-field"
+      id="amount" name="amount" value="" /> Euros</label>
+        <label for="field1"><span>Courriel <span class="required">*</span></span><input type="email" formControlName="email" class="input-field"
+          name="field1" value="" required/></label>
+
+        <button class="buttonfx curtainup" [disabled]="!memberData.valid">Submit</button>
+        <app-submit-donations *ngIf="submitted == true" [Fname]="memberData.controls.FirstName.value">
+        </app-submit-donations>
+    </form>
+</div> -->
+
+
+<div class="contact  darken-pseudo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="p-5" [formGroup]="memberData" (ngSubmit)="onSubmit()">
+
+                    <p class="h4 mb-4 text-center">Veuillez remplir le formulaire</p>
+
+
+                    <input class="form-control mb-4" id="textInput" type="text" formControlName="FirstName" placeholder="Mme/Mr Prénom" required>
+
+                    <input type="text" id="defaultContactFormName" class="form-control mb-4" formControlName="LastName" placeholder="Nom" required>
+
+                    <input type="text" formControlName="Address" id="AddressInp" class="form-control mb-4" value="" placeholder="Addresse" required />
+                    <input type="number" formControlName="PostalCode" id="postalCodeInp" class="form-control mb-4" value="" placeholder="Postal code" min="0" minlength="3" required/>
+                    <input type="text" formControlName="City" id="VilleInp" class="form-control mb-4" value="" placeholder="Ville" required />
+
+                    <label>Montant à payer
+                    <input type="number" formControlName="amount" class="form-control mb-4"
+                    id="amount" name="amount" value="" min="0"/>
+                  </label><span id="currency"> €</span>
+                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Courriel" formControlName="email" required>
+                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!memberData.valid" (click)="openDialog()">Soumettre</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

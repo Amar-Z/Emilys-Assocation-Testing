@@ -1,0 +1,27 @@
+<!-- <div [dir]='ui_direction'>
+
+    <div class="d-flex justify-content-center">
+        <app-main-menu></app-main-menu>
+        <router-outlet></router-outlet>
+        <app-front></app-front>
+    </div>
+    <app-logout *ngIf='(Show_Logout$ | async)' style='position:fixed;bottom:20px;right:20px'>
+    </app-logout>
+</div> -->
+
+
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<app-main-menu></app-main-menu>
+
+<div class="content-wrapper">
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        <app-front></app-front>
+    </div>
+</div>

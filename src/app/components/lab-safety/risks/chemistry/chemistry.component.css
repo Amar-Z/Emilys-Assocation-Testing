@@ -1,0 +1,56 @@
+h1{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+
+html {
+  margin-left:1%;
+  margin-right:1%;
+  margin-bottom:1%;
+  margin-top:1%;
+  width:98%;
+  height:98%;
+}
+
+p{
+font-size: 10px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 200;
+}
+#imgOne{
+ height : 110px;
+ width: 150px;
+
+}
+.image{
+  text-align: center;
+}
+video {
+  max-width: 100%;
+  height: auto;
+
+}
+table img {
+  width: 50px;
+  height: 50px;
+}
+td{
+  text-align: center;
+}
+#firstImg{
+  width: 130px;
+  height: 70px;;
+}
+video {
+  max-width: 100%;
+  height: auto;
+
+}
+.PartThree img{
+  text-align: center;
+width: 400px;
+height: 300px;;
+}
